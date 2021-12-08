@@ -46,7 +46,7 @@ _Puedes ver un video desmostracion aqui!_
 
 [Ver...](https://www.youtube.com/watch?v=LFmfZASO9IE&t=1909s)
 
-![](odontograma/blob/main/Odontograma/img/ard.PNG)
+![](Odontograma/img/ard.PNG)
 
 _⌨️ con ❤️ por Daniel Ramirez._
 * [Instagram](https://www.instagram.com/destructive.dev/) 😊
