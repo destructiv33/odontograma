@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ModelsStoreContainer" CdmEntityContainer="ODataBase">
+    <EntitySetMapping Name="AntFam">
+      <EntityTypeMapping TypeName="Models.AntFam">
+        <MappingFragment StoreEntitySet="AntFam">
+          <ScalarProperty Name="AntFamId" ColumnName="AntFamId" />
+          <ScalarProperty Name="NombreCompleto" ColumnName="NombreCompleto" />
+          <ScalarProperty Name="ParentescoId" ColumnName="ParentescoId" />
+          <ScalarProperty Name="EnfermedadId" ColumnName="EnfermedadId" />
+          <ScalarProperty Name="PacienteId" ColumnName="PacienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AntPer">
+      <EntityTypeMapping TypeName="Models.AntPer">
+        <MappingFragment StoreEntitySet="AntPer">
+          <ScalarProperty Name="AntPerId" ColumnName="AntPerId" />
+          <ScalarProperty Name="EnfermedadId" ColumnName="EnfermedadId" />
+          <ScalarProperty Name="PacienteId" ColumnName="PacienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="Models.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="Models.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="Models.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="Models.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cita">
+      <EntityTypeMapping TypeName="Models.Cita">
+        <MappingFragment StoreEntitySet="Cita">
+          <ScalarProperty Name="CitaId" ColumnName="CitaId" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="Hora" ColumnName="Hora" />
+          <ScalarProperty Name="ClinicaId" ColumnName="ClinicaId" />
+          <ScalarProperty Name="PacienteId" ColumnName="PacienteId" />
+          <ScalarProperty Name="Estado" ColumnName="Estado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clinica">
+      <EntityTypeMapping TypeName="Models.Clinica">
+        <MappingFragment StoreEntitySet="Clinica">
+          <ScalarProperty Name="ClinicaId" ColumnName="ClinicaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Derechohabiencia">
+      <EntityTypeMapping TypeName="Models.Derechohabiencia">
+        <MappingFragment StoreEntitySet="Derechohabiencia">
+          <ScalarProperty Name="DerechohabienciaId" ColumnName="DerechohabienciaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetalleCita">
+      <EntityTypeMapping TypeName="Models.DetalleCita">
+        <MappingFragment StoreEntitySet="DetalleCita">
+          <ScalarProperty Name="DetalleCitaId" ColumnName="DetalleCitaId" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Observacion" ColumnName="Observacion" />
+          <ScalarProperty Name="CitaId" ColumnName="CitaId" />
+          <ScalarProperty Name="EstudianteId" ColumnName="EstudianteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DetallePaciente">
+      <EntityTypeMapping TypeName="Models.DetallePaciente">
+        <MappingFragment StoreEntitySet="DetallePaciente">
+          <ScalarProperty Name="DetPacId" ColumnName="DetPacId" />
+          <ScalarProperty Name="Calle" ColumnName="Calle" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="Cp" ColumnName="Cp" />
+          <ScalarProperty Name="DerechohabienciaId" ColumnName="DerechohabienciaId" />
+          <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+          <ScalarProperty Name="OcupacionId" ColumnName="OcupacionId" />
+          <ScalarProperty Name="EscolaridadId" ColumnName="EscolaridadId" />
+          <ScalarProperty Name="PacienteId" ColumnName="PacienteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Diagnostico">
+      <EntityTypeMapping TypeName="Models.Diagnostico">
+        <MappingFragment StoreEntitySet="Diagnostico">
+          <ScalarProperty Name="DiagnosticoId" ColumnName="DiagnosticoId" />
+          <ScalarProperty Name="Diente" ColumnName="Diente" />
+          <ScalarProperty Name="Sintoma" ColumnName="Sintoma" />
+          <ScalarProperty Name="CitaId" ColumnName="CitaId" />
+          <ScalarProperty Name="SintomaId" ColumnName="SintomaId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Enfermedad">
+      <EntityTypeMapping TypeName="Models.Enfermedad">
+        <MappingFragment StoreEntitySet="Enfermedad">
+          <ScalarProperty Name="EnfermedadId" ColumnName="EnfermedadId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Escolaridad">
+      <EntityTypeMapping TypeName="Models.Escolaridad">
+        <MappingFragment StoreEntitySet="Escolaridad">
+          <ScalarProperty Name="EscolaridadId" ColumnName="EscolaridadId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Escuela">
+      <EntityTypeMapping TypeName="Models.Escuela">
+        <MappingFragment StoreEntitySet="Escuela">
+          <ScalarProperty Name="EscuelaId" ColumnName="EscuelaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estado">
+      <EntityTypeMapping TypeName="Models.Estado">
+        <MappingFragment StoreEntitySet="Estado">
+          <ScalarProperty Name="EstadoId" ColumnName="EstadoId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Estudiante">
+      <EntityTypeMapping TypeName="Models.Estudiante">
+        <MappingFragment StoreEntitySet="Estudiante">
+          <ScalarProperty Name="EstudianteId" ColumnName="EstudianteId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="EscuelaId" ColumnName="EscuelaId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ocupacion">
+      <EntityTypeMapping TypeName="Models.Ocupacion">
+        <MappingFragment StoreEntitySet="Ocupacion">
+          <ScalarProperty Name="OcupacionId" ColumnName="OcupacionId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paciente">
+      <EntityTypeMapping TypeName="Models.Paciente">
+        <MappingFragment StoreEntitySet="Paciente">
+          <ScalarProperty Name="PacienteId" ColumnName="PacienteId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parentesco">
+      <EntityTypeMapping TypeName="Models.Parentesco">
+        <MappingFragment StoreEntitySet="Parentesco">
+          <ScalarProperty Name="ParentescoId" ColumnName="ParentescoId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sintoma">
+      <EntityTypeMapping TypeName="Models.Sintoma">
+        <MappingFragment StoreEntitySet="Sintoma">
+          <ScalarProperty Name="SintomaId" ColumnName="SintomaId" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="Models.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
